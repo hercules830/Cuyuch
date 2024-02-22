@@ -1,0 +1,28 @@
+if ($sql1 or $sql2 or $sql3 or $sql4 or $sql5 or $sql6 or $sql7 or $sql8 or $sql9 or $sql10 or $sql11 or $sql12) {
+?>
+  <?php
+  include('../Php/fichaBallet.php');
+  ?>
+  <style>
+    .nuevo_cliente {
+      position: absolute;
+      background-color: green;
+      color: lightgreen;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      z-index: 9999;
+    }
+  </style>
+  <script>
+    // Ocultar el mensaje de error después de 5 segundos
+    setTimeout(function() {
+      var nuevo_cliente = document.querySelector('.nuevo_cliente');
+      if (nuevo_cliente) {
+        nuevo_cliente.style.display = 'none';
+      }
+    }, 5000);
+  </script>
+  <h3 class="nuevo_cliente">El cliente se ha agregado exitosamente</h3>
+<?php
+}

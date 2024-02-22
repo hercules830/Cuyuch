@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    height: 100vh;
+}
+
+.ficha {
+    max-width: 95%;
+    margin-top: 40px;
+}
+
+
+
+#centrarPrograma{
+  text-align: center;
+}
+
+#Programa {
+  width: 200px;
+  height: 30px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+
+
+
+label {
+    border: none;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+
+
+
+fieldset{
+    font-size: 1.3vmax;
+}
+
+
+input,
+select {
+    height: 1.5rem;
+    background: none;
+    border: 1px solid rgb(9, 9, 121);
+    color: white;
+    cursor: pointer;
+    margin-top: 1px;
+}
+
+.tabla {
+  top: 10px;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    border: solid 1px rgb(9, 9, 121);
+    background-color: rgba(213, 213, 213, .4);
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 1px;
+    padding-bottom: 1px;
+}
+.tabla ul input,
+.tabla ul select{
+    width: 99.5px;
+
+  }
+  
+  .datos ul input,
+  .datos ul select {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .datos ul li {
+    list-style: none;
+  }
+  
+
+
+
+.select-horario {
+    font-size: .8rem;
+}
+
+fieldset>label>input {
+    width: 1rem;
+}
+
+.datos {
+    width: 95vw;
+    padding-bottom: 10px;
+
+}
+
+.datos1>ul>li {
+    width: 25vw;
+    box-sizing: border-box;
+}
+
+
+.datos2>ul>li {
+    width: 15vw;
+    box-sizing: border-box;
+}
+
+
+.datos3>ul>li {
+    width: 10vw;
+    box-sizing: border-box;
+}
+
+
+.datos4>ul>li {
+    width: 10vw;
+    box-sizing: border-box;
+}
+
+
+
+select>option{
+    background-color: rgb(141, 141, 230);
+}
+
+
+
+#configuracion, #cerrar {
+    font-family: Arial;
+    color: #000000;
+    font-size: 15px;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 28px;
+    box-shadow: 0px 1px 3px #666666;
+    text-shadow: 1px 1px 3px #290329;
+    border: solid #1c1cd9 2px;
+    background: linear-gradient(#6254b3, #cfddff);
+  }
+  
+
+
+
+
+/* configuracion, ventana emergente */
+
+
+/* Estilos para la ventana emergente */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #8498cd;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+  }
+
+  .contenido{
+    margin: 40px;
+  }
+
+  /* Estilos para la ventana en la barra de tareas */
+  .taskbar-window {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    width: 150px;
+    height: 20px;
+    background-color: #8498cd;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    cursor: pointer;
+  }
+
+  .taskbar-window .taskbar-label {
+    line-height: 40px;
+    text-align: center;
+}
+
+
+.agregar-horario {
+    margin-top: 20px;
+}
+
+#matriculaGratis, #todasLasMatriculas{
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: solid 2px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+#agregar-opcion-btn,
+#eliminar-opcion-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#nueva-opcion-input {
+    padding: 5px;
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* <!-- estilo del formulario flotante --> */
+    
+#loginForm {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+}
+
+#claveMaestraForm{
+  display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+
+}
+
+#Instituto>optgroup{
+    background-color:  #8498cd;;
+}
+
+
+.textoMeses{
+  text-align: center;
+  background-color: rgb(10, 69, 209);
+  width: 100%;
+}
+
+
+
+/* ------------cuadro de dialogo de eliminar membresía------------- */
+.dialog-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #497fb3;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: none;
+  }
+  
+  .dialog-box.show {
+    display: block;
+  }
+  
+  .dialog-box h2 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .dialog-box input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .dialog-box label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .dialog-box button {
+    margin-top: 10px;
+  }
+  
+  .opcion-repetida {
+    color: red;
+  }
+  
+
+  /*---------fin-------*/
+
+
+
+
+
+/*-------------------- hover -----------------*/
+
+
+
+::placeholder {
+    color: white;
+    font-size: .8rem;
+}
+
+#agregar-opcion-btn:hover,
+#eliminar-opcion-btn:hover {
+    background-color: #3498db;
+}
+
+#configuracion:hover, #cerrar:hover, #matriculaGratis:hover {
+    background: linear-gradient(#572edb, #b097c4);
+    cursor: pointer;
+  }
+
+  
+
+
+
+
+
+
+/* -----------medias query--------------- */
+
+
+/* Placeholder para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+    input::placeholder {
+        font-size: .6em;
+        text-align: left;
+    }
+}

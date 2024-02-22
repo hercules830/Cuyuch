@@ -1,0 +1,40 @@
+body {
+  background-color: #f5f5f5;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.3);
+  transition: box-shadow 0.3s ease-in-out; /* Agregamos una animación a la sombra */
+}
+
+main p {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #333;
+}
+
+button[name="exportar_excel"] {
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(33, 150, 243, 0.3);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[name="exportar_excel"]:hover {
+  background-color: #1976d2;
+  transform: scale(1.05); /* Agregamos una animación de escala al hacer hover */
+}
+
+main:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 255, 0.5); /* Cambiamos la sombra al hacer hover */
+}

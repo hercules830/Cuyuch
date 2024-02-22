@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* ----------------------------Clases generales---------------------- */
+
+
+.container{
+    margin: auto;
+    max-width: 1024px;
+    width: 95%;
+  }
+  
+  .container--h100{
+    height: 100%;
+  }
+  
+  .centrar-texto{
+    text-align: center;
+  }
+  
+  
+  
+  
+  /* cajas flexibles-------flex */
+  
+  .flex{
+      display: flex;
+  }
+  
+  .flex--centrarv{
+    align-items: center;
+  }
+  
+  .flex--centrarh{
+      justify-content: center;
+  }
+  
+  .wrap{
+    flex-wrap: wrap;
+  }
+  
+  .izq-der{
+    justify-content: space-between;
+  }
+  
+  
+  /* -----------espacios---------- */
+  
+  
+  .gap{
+    gap: 2rem;
+  }
+  
+  .paddingV-1rem{
+    padding: 1rem 0rem;
+  }
+
+  .paddingV-2rem{
+    padding:2rem 0rem;
+  }
